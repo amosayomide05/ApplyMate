@@ -1,0 +1,42 @@
+{
+  "name": "applymate",
+  "version": "1.0.0",
+  "description": "ApplyMate - AI-powered WhatsApp bot with Groq integration for job tracking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -c server.js && node -c aiAgent.js && echo 'Syntax check passed'",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop applymate",
+    "pm2:restart": "pm2 restart applymate",
+    "pm2:logs": "pm2 logs applymate"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "express",
+    "api",
+    "ai",
+    "groq",
+    "langchain"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^1.0.2",
+    "@langchain/groq": "^1.0.0",
+    "@langchain/langgraph": "^1.0.1",
+    "axios": "^1.12.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "googleapis": "^164.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "uuid": "^13.0.0",
+    "whatsapp-web.js": "^1.23.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "pm2": "^5.3.0"
+  }
+}

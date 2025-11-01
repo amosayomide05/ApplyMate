@@ -1,0 +1,10 @@
+node_modules/
+.wwebjs_auth/
+.wwebjs_cache/
+media/
+*.log
+npm-debug.log*
+logs/
+.pm2/
+.env
+package-lock.json
